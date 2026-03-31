@@ -13,15 +13,6 @@ h1 {
   padding: 20px;
 }
 
-div {
-  display: none; }
-
-div:target {
-  display: block; }
-
-div[id*=tab]:target ~ #two { 
-  display: block; } 
-
-  div[id*=tab]:target ~ #three { 
-  display: block; } 
+.content-page { display: none; }
+.content-page.active { display: block; }
 

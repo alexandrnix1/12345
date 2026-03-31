@@ -7,32 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div id="tab/one"></div>
-<div id="tab/two"></div>
-<div id="tab/three"></div>
-
-<div id="tab">
-  <a href="#one">1 страница</a>
-  <a href="#two">2 страница</a>
-  <b><a href="#tab/one">3 страница</a></b>
-</div>
-
-<div id="two">
-  <a href="#one">1 страница</a>
-  <b><a href="#two">2 страница</a></b>
-  <a href="#tab/one">3 страница</a>
-</div>
-
-<div id="one">
-  <b><a href="#one">1 страница</a></b>
-  <a href="#two">2 страница</a>
-  <a href="#tab/one">3 страница</a>
-</div>
-
-<div id="three">
-  <b><a href="#one">1 страница</a></b>
-  <a href="#two">2 страница</a>
-  <a href="#tab/one">3 страница</a>
-</div>
+ <header class="head">
+<nav>
+    <button class="menu-btn" data-group="main" data-target="page1">Страница 1</button>
+    <button class="menu-btn" data-group="main" data-target="page2">Страница 2</button>
+</nav>
+ </header>
+ <div id="page1" class="content-page" data-group="main">Контент 1</div>
+<div id="page2" class="content-page" data-group="main" style="display:none;">Контент 2</div>
 </body>
-</html> 
+</html>
