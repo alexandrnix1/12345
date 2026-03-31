@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
 }
 h1 {
@@ -12,3 +12,16 @@ h1 {
   background: #7c0b0b;
   padding: 20px;
 }
+
+div {
+  display: none; }
+
+div:target {
+  display: block; }
+
+div[id*=tab]:target ~ #two { 
+  display: block; } 
+
+  div[id*=tab]:target ~ #three { 
+  display: block; } 
+
